@@ -23,12 +23,6 @@ export const App = () => {
     }));
   };
 
-  //   useEffect(feedbackTypeBtn => {
-  //     setState(prevState => ({
-  //       [feedbackTypeBtn]: prevState[feedbackTypeBtn] + 1,
-  //     }));
-  //   }, [state]);
-
   const countTotalFeedback = () => {
     return Object.values(state).reduce((acc, value) => acc + value, 0);
   };
